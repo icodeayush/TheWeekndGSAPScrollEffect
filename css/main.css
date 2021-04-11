@@ -1,0 +1,172 @@
+:root {
+  font-family: Helvetica;
+  /*-------------Colors------------- */
+  --ColorDarkA: hsl(0, 0%, 0%);
+  --ColorDarkB: hsl(0, 0%, 18%);
+  --ColorWhiteA: hsl(0, 0%, 94%);
+  --ColorWhiteB: hsl(0, 0%, 90%);
+  /*-------------FontSize -- Golden Ratio (1.618) Base Size 13px------------- */
+  --FontH1: 233.25px;
+  --FontH2: 144.16px;
+  --FontH3: 89.10px;
+  --FontH4: 55.07px;
+  --FontH5: 34.03px;
+  --FontParagraph: 21.03px;
+  --FontSubtitle: 13px;
+  /*-------------GoldenRatio (1.618) (Viewport Width 1920px)------------- */
+  --GoldenRatio1: 1920px;
+  --GoldenRatio2: 1186.65px;
+  --GoldenRatio3: 733.41px;
+  --GoldenRatio4: 453.28px;
+  --GoldenRatio5: 280.15px;
+  --GoldenRatio6: 173.15px;
+  --GoldenRatio7: 107.01px;
+  --GoldenRatio8: 66.14px;
+  --GoldenRatio9: 40.88px;
+  --GoldenRatio10: 25.27px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--ColorDarkA);
+}
+
+body {
+  background: var(--ColorWhiteA);
+  opacity: 0;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#wrapper h1 {
+  padding-left: var(--GoldenRatio7);
+  font-size: var(--FontH2);
+}
+
+#wrapper h1 span {
+  color: var(--ColorDarkB);
+}
+
+#ImgWrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 2200px;
+  background: var(--ColorDarkA);
+}
+
+#ImgWrapper img {
+  position: absolute;
+  height: 100vh;
+  box-shadow: 0 0 31px black;
+}
+
+#ImgWrapper #img1 {
+  z-index: 1;
+  height: 50vh;
+  bottom: 15%;
+  left: 5%;
+}
+
+#ImgWrapper #img2 {
+  z-index: 2;
+  height: 45vh;
+  bottom: 40%;
+  right: 5%;
+}
+
+#ImgWrapper #img3 {
+  z-index: 3;
+  height: 40vh;
+  bottom: 22%;
+  right: 25%;
+}
+
+#ImgWrapper #img4 {
+  z-index: 4;
+  height: 31vh;
+  bottom: 55%;
+  left: 13%;
+}
+
+#ImgWrapper #img5 {
+  z-index: 5;
+  height: 50vh;
+  bottom: 22%;
+  left: 36%;
+}
+
+#ImgWrapper #img6 {
+  z-index: 6;
+  height: 31vh;
+  bottom: 13%;
+  left: 13%;
+}
+
+#ImgWrapper #img7 {
+  z-index: 7;
+  height: 31vh;
+  bottom: 10%;
+  right: 13%;
+}
+
+#codeby {
+  height: var(--GoldenRatio4);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--ColorWhiteB);
+}
+
+#codeby a {
+  text-decoration: none;
+  font-size: var(--FontParagraph);
+  font-weight: 400;
+  color: var(--ColorDarkB);
+}
+
+#codeby a span {
+  font-weight: 700;
+  display: inline-block;
+  color: var(--ColorDarkA);
+}
+
+/*-------------@media (max-width: 1920px)------------- */
+
+@media (max-width: 1920px) {
+  :root {
+    /*-------------FontSize (PX to VW Conversion With Viewport Width 1920px)------------- */
+    --FontH1: 12.148vw;
+    --FontH2: 7.508vw;
+    --FontH3: 4.641vw;
+    --FontH4: 2.868vw;
+    --FontH5: 1.772vw;
+    --FontParagraph: 1.095vw;
+    --FontSubtitle: 0.677vw;
+    /*-------------GoldenRatio (1.618) (Viewport Width 1920px)------------- */
+    --GoldenRatio1: 100vw;
+    --GoldenRatio2: 61.805vw;
+    --GoldenRatio3: 38.198vw;
+    --GoldenRatio4: 23.608vw;
+    --GoldenRatio5: 14.591vw;
+    --GoldenRatio6: 9.018vw;
+    --GoldenRatio7: 5.573vw;
+    --GoldenRatio8: 3.445vw;
+    --GoldenRatio9: 2.129vw;
+    --GoldenRatio10: 1.316vw;
+  }
+}
+
+/*-------------/@media (max-width: 1920px)------------- */
