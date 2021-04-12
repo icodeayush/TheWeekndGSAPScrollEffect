@@ -68,7 +68,6 @@ body {
 
 #ImgWrapper img {
   position: absolute;
-  height: 100vh;
   box-shadow: 0 0 31px black;
 }
 
@@ -170,3 +169,73 @@ body {
 }
 
 /*-------------/@media (max-width: 1920px)------------- */
+
+/*-------------@media (max-width: 400px)------------- */
+
+@media (max-width: 400px) {
+  :root {
+    /*-------------GoldenRatio (1.618) (Viewport Width 400px) Base Size 13px------------- */
+    --FontH1: 58.313vw;
+    --FontH2: 36.040vw;
+    --FontH3: 22.275vw;
+    --FontH4: 13.768vw;
+    --FontH5: 8.508vw;
+    --FontParagraph: 5.258vw;
+    --FontSubtitle: 3.250vw;
+    /*-------------GoldenRatio (1.618) (Viewport Width 400px)------------- */
+    --GoldenRatio1: 100vw;
+    --GoldenRatio2: 61.805vw;
+    --GoldenRatio3: 38.197vw;
+    --GoldenRatio4: 23.608vw;
+    --GoldenRatio5: 14.590vw;
+    --GoldenRatio6: 9.018vw;
+    --GoldenRatio7: 5.572vw;
+    --GoldenRatio8: 3.445vw;
+    --GoldenRatio9: 2.130vw;
+    --GoldenRatio10: 1.317vw;
+  }
+  #wrapper h1 {
+    font-size: var(--FontH5);
+  }
+  #ImgWrapper #img1 {
+    height: 22vh;
+    bottom: 50%;
+    left: 7%;
+  }
+  #ImgWrapper #img2 {
+    height: 22vh;
+    bottom: 70%;
+    right: 7%;
+  }
+  #ImgWrapper #img3 {
+    height: 22vh;
+    bottom: 35%;
+    right: 35%;
+  }
+  #ImgWrapper #img4 {
+    height: 22vh;
+    bottom: 61.89%;
+    left: 13%;
+  }
+  #ImgWrapper #img5 {
+    height: 35vh;
+    left: 46%;
+    bottom: 31%;
+  }
+  #ImgWrapper #img6 {
+    height: 17vh;
+    bottom: 22%;
+  }
+  #ImgWrapper #img7 {
+    height: 18vh;
+    left: 22%;
+  }
+  #codeby {
+    height: var(--GoldenRatio2);
+  }
+  #codeby a {
+    font-size: var(--FontSubtitle);
+  }
+}
+
+/*-------------/@media (max-width: 400px)------------- */
