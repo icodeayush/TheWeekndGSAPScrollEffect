@@ -121,25 +121,24 @@ body {
 }
 
 #codeby {
-  height: var(--GoldenRatio4);
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--ColorWhiteB);
 }
 
 #codeby a {
   text-decoration: none;
-  font-size: var(--FontParagraph);
+  font-size: var(--FontH5);
   font-weight: 400;
-  color: var(--ColorDarkB);
+  color: var(--ColorWhiteB);
 }
 
 #codeby a span {
   font-weight: 700;
   display: inline-block;
-  color: var(--ColorDarkA);
+  color: var(--ColorWhiteA);
 }
 
 /*-------------@media (max-width: 1920px)------------- */
@@ -230,11 +229,8 @@ body {
     height: 18vh;
     left: 22%;
   }
-  #codeby {
-    height: var(--GoldenRatio2);
-  }
   #codeby a {
-    font-size: var(--FontSubtitle);
+    font-size: var(--FontParagraph);
   }
 }
 
