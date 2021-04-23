@@ -45,16 +45,26 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-flow: column;
   align-items: center;
+  justify-content: center;
 }
 
 #wrapper h1 {
-  padding-left: var(--GoldenRatio7);
+  position: absolute;
+  left: var(--GoldenRatio7);
   font-size: var(--FontH2);
 }
 
 #wrapper h1 span {
   color: var(--ColorDarkB);
+}
+
+#wrapper p {
+  position: absolute;
+  bottom: var(--GoldenRatio7);
+  color: var(--ColorDarkB);
+  font-size: var(--FontParagraph);
 }
 
 #ImgWrapper {
